@@ -1,0 +1,41 @@
+<div class="container mt-4 ">
+    <div class="row mb-3">
+        <div class="card col-10 mx-auto order">
+            <img src="../../../assets/img/logo.png" height="50px" class="mx-auto mt-3 mb-3">
+            <span class="aux"></span>
+            <div class="card-body pl-0 pr-0 text-center">
+                <h4 class="mx-auto">Mesa: {{order.table.tableNumber}}</h4>
+                Mozo: <b>{{order.user.username}}</b>
+            </div>  
+            <span class="aux"></span>
+            <div class="card-body pl-0 pr-0">
+                <span class="food" *ngFor="let product of products">
+                    <h4 class="col-6">{{product.name}}</h4>
+                    <h4 class="col-6 price">${{product.price}}</h4>
+                </span>
+            </div>
+            <span class="aux"></span>
+            <div class="card-body pl-0 pr-0">
+                <span class="food">
+                    <h4 class="col-6">Total</h4>
+                    <h4 class="col-6 price">${{order.total}}</h4>
+                </span>
+            </div>
+            <span class="aux"></span>
+            <div class="card-body pl-3 pr-3">
+                <p>{{order.comments}}</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <button class="buttonCategory col-3 mx-auto mb-2 btn" (click)="addFood()" *ngIf="true">Agregar</button>
+    </div>
+    <div class="row">
+        <button class="buttonCategory col-3 mx-auto mb-2 btn" (click)="closeOrder(order.id,order)" *ngIf="true">Cerrar</button>
+    </div>
+    <div class="row">
+        <button class="buttonCategory col-3 mx-auto mb-2 btn" (click)="goTables()">Mesas</button>
+    </div>
+</div>

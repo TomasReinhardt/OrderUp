@@ -1,0 +1,9 @@
+.row .orderBox {
+  background: #ff416c;
+  background: -webkit-gradient(linear, left top, right top, from(#ff416c), to(#ff4b2b));
+  background: linear-gradient(90deg, #ff416c 0%, #ff4b2b 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff416c",endColorstr="#ff4b2b",GradientType=1);
+  border-radius: 20px;
+  border: 2px solid black;
+}
+/*# sourceMappingURL=orders.component.css.map */

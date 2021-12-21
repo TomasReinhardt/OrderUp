@@ -1,0 +1,20 @@
+<table class="table table-hover w-auto m-auto">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Apellido</th>
+        <th scope="col">Puesto</th>
+        <th scope="col">Quitar</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let personal of Personal; let i=index">
+        <th scope="row">{{i}}</th>
+        <td>{{personal.username}}</td>
+        <td>{{personal.surname}}</td>
+        <td>{{personal.role.name}}</td>
+        <td><a class="Btn btn-danger">X</a></td>
+      </tr>
+    </tbody>
+  </table>

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AACI,IADA,CACA,SAAS,CAAC;EACN,UAAU,EAAE,OAAe;EAC3B,UAAU,EAAE,qDAA0E;EACtF,UAAU,EAAE,wDAA6E;EACzF,UAAU,EAAE,gDAAqE;EACjF,MAAM,EAAE,wGAAwG;EAChH,aAAa,EAAE,IAAI;EACnB,MAAM,EAAE,eAAe;CAC1B",
+    "sources": [
+        "orders.component.scss"
+    ],
+    "names": [],
+    "file": "orders.component.css"
+}

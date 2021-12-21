@@ -1,0 +1,33 @@
+<div class="container mt-4">
+    <form id="foodForm" #foodForm="ngForm" (ngSubmit)="addFood(foodForm)">
+        <p class="heading">Agregar Producto</p>
+        <div class="box">
+            <p>Nombre</p>
+            <div>
+                <input name="productname" type="text" #productname [(ngModel)]="product.name" >
+            </div>
+        </div>
+        <div class="box">
+            <p>Cateogria</p>
+            <select name="category" #category [(ngModel)]="product.category.id">
+                <option value="0">-------</option>
+                <option *ngFor="let category of Categorys" value="{{category.id}}">{{category.name}}</option>
+            </select>
+        </div>
+        <div class="box">
+            <p>Precio</p>
+            <div>
+                <input name="price" type="number" #price [(ngModel)]="product.price">
+            </div>
+        </div>
+        <div class="box">
+            <p>Descripción</p>
+            <textarea class="description" name="description" #description [(ngModel)]='product.description'>
+            </textarea>
+        </div>
+        <button class="loginBtn btn-danger">Registrar</button>
+    </form>
+    <span class="mx-auto" *ngIf="productLoad">Producto cargado</span>
+
+</div>
+

@@ -1,0 +1,83 @@
+a {
+  text-decoration: none !important;
+  color: black !important;
+  width: 100%;
+  display: block;
+  padding: 10px;
+}
+
+.blur {
+  -webkit-filter: blur(0.7px);
+          filter: blur(0.7px);
+}
+
+.container {
+  min-height: 80vh;
+}
+
+.container .category-card {
+  border-radius: 30px;
+  overflow: hidden;
+  border: 2px solid black !important;
+}
+
+.container #headingOne {
+  background: #ff416c;
+  background: -webkit-gradient(linear, left top, right top, from(#ff416c), to(#ff4b2b));
+  background: linear-gradient(90deg, #ff416c 0%, #ff4b2b 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff416c",endColorstr="#ff4b2b",GradientType=1);
+  padding: 0px;
+}
+
+.container #category-list {
+  list-style: none;
+}
+
+.container #category-list #comments textarea {
+  width: 100%;
+  background-color: transparent;
+  color: white;
+  border: none;
+}
+
+.container #category-list span {
+  min-width: 70px;
+}
+
+.container #category-list .food {
+  width: 300px;
+}
+
+.container #category-list .buttonCat {
+  display: block;
+  width: 30px;
+  height: 30px;
+  line-height: 25px;
+  text-align: center;
+  background-color: #ff4b2b;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.container #category-list .descriptionFood {
+  color: gray;
+}
+
+.container .category-card-body {
+  background-color: #303030 !important;
+  color: white !important;
+}
+
+.container .buttonCategory {
+  background: #ff416c;
+  background: -webkit-gradient(linear, left top, right top, from(#ff416c), to(#ff4b2b));
+  background: linear-gradient(90deg, #ff416c 0%, #ff4b2b 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff416c",endColorstr="#ff4b2b",GradientType=1);
+  color: black !important;
+  border-radius: 20px;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+  border: 2px solid black;
+  font-size: 18px;
+}
+/*# sourceMappingURL=card.component.css.map */

@@ -1,0 +1,26 @@
+.container {
+    .aux {
+        border: 1px dashed black;
+    }
+    .food {
+        display: flex;
+        justify-content: space-around;
+        h4 {
+            font-size: 15px !important;
+        }
+        .price {
+            text-align: right;
+        }
+    }
+    .buttonCategory {
+        background: rgb(255,65,108);
+        background: -moz-linear-gradient(90deg, rgba(255,65,108,1) 0%, rgba(255,75,43,1) 100%);
+        background: -webkit-linear-gradient(90deg, rgba(255,65,108,1) 0%, rgba(255,75,43,1) 100%);
+        background: linear-gradient(90deg, rgba(255,65,108,1) 0%, rgba(255,75,43,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff416c",endColorstr="#ff4b2b",GradientType=1);
+        color: black !important;
+        border-radius: 20px;
+        transition: all 300ms;
+        border: 2px solid black;
+    }
+}

@@ -1,0 +1,27 @@
+.contenedor{
+    margin: 20px 5px 10px 5px
+}
+
+.contProducts {
+    display: flex;
+    justify-content: space-between;
+    padding: 2px 4px 0px 4px;
+    margin-top: 10px;
+    align-items: center;
+    background: linear-gradient(#ff416c, #ff4b2b);
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.otraClase{
+    text-align: left;
+}
+
+span {
+    background: linear-gradient(#ff416c, #ff4b2b);
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
