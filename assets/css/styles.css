@@ -1,0 +1,28 @@
+body {
+    min-height: 80vh;
+    background-color: rgb(247,231,215) !important;
+}
+
+.container {
+    margin-bottom: 30px !important;
+}
+
+.navbar {
+    background: #ff416c;
+    background: -webkit-gradient(linear, left top, right top, from(#ff416c), to(#ff4b2b));
+    background: linear-gradient(90deg, #ff416c 0%, #ff4b2b 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff416c",endColorstr="#ff4b2b",GradientType=1);
+    text-align: center;
+}
+
+.nav-link{
+    color: black !important;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+.navbar-toggler {
+    border-color: black !important;
+}
