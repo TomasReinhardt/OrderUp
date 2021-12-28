@@ -14,7 +14,7 @@
         <td>{{personal.username}}</td>
         <td>{{personal.surname}}</td>
         <td>{{personal.role.name}}</td>
-        <td><a class="Btn btn-danger">X</a></td>
+        <td><a class="Btn btn-danger" (click)="deletePersonal(personal.id)">X</a></td>
       </tr>
     </tbody>
   </table>

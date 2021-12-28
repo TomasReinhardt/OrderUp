@@ -27,4 +27,9 @@ export class UserService {
         let headers = new HttpHeaders().set('Content-Type','application/json');
         return this._http.get(this.url+"/users",{headers: headers})
     }
+
+    deleteUser(id: any):Observable<any> {
+        let headers = new HttpHeaders().set('Content-Type','application/json');
+        return this._http.delete(this.url+'users/'+id, {headers: headers});
+    }
 }

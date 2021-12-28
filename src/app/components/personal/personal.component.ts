@@ -19,7 +19,22 @@ export class PersonalComponent implements OnInit {
         this.Personal = response;
       },
       err => {
-        console.log(err)
+        console.log("-----------------------")
+        console.log(err);
+        console.log("-----------------------")
+      }
+    )
+  }
+
+  deletePersonal(id: any){
+    this._UserService.deleteUser(id).subscribe(
+      response => {
+
+      },
+      err => {
+        console.log("-----------------------")
+        console.log(err);
+        console.log("-----------------------")
       }
     )
   }
