@@ -14,6 +14,23 @@ export class PersonalComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    this.getPersonal()
+  }
+
+  deletePersonal(id: any){
+    this._UserService.deleteUser(id).subscribe(
+      response => {
+        this.getPersonal()
+      },
+      err => {
+        console.log("-----------------------")
+        console.log(err);
+        console.log("-----------------------")
+      }
+    )
+  }
+
+  getPersonal(){
     this._UserService.getUsers().subscribe(
       response => {
         this.Personal = response;
@@ -25,19 +42,4 @@ export class PersonalComponent implements OnInit {
       }
     )
   }
-
-  deletePersonal(id: any){
-    this._UserService.deleteUser(id).subscribe(
-      response => {
-
-      },
-      err => {
-        console.log("-----------------------")
-        console.log(err);
-        console.log("-----------------------")
-      }
-    )
-  }
-
-
 }
